@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: #020230;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 25px 85px;
+    
+}
+
+.logo a{
+    text-decoration: none;
+}
+.logo h1{
+    color: white;
+    font-size: 25px;
+}
+
+.logo span{
+    color:#ff4646;
+    font-size: 25px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 50px;
+}
+.navlinks a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+.navlinks a:hover{
+    color: #fff;
+
+}
+
+.navlinks a::before{
+    content:'';
+    position:absolute ;
+    bottom: 10px;
+    left: 0 ;
+    width: 0%;
+    height: 3px;
+    background-color: #ff4646;
+    transition: all .5s;
+}
+
+.navlinks a:hover::before{
+    width: 100%;
+
+}
+
+.toggle{
+    color: #f8f8f8;
+    display:hidden;
+    font-size:100px; 
+}
+
+
+
+/* .logo a{
+    text-decoration: none;
+}
+.logo h1{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.logo span{
+    color:#ff4646;
+    font-size: 20px;
+} */
+
+.form{
+    background-color:#f8f8f8;
+    border-radius: 50px;
+    margin: 50px 400px;
+    padding: 30px 100px;
+    margin-bottom: 2rem;
+}
+
+.header h1{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 0.7rem;
+    text-align: center;
+
+}
+
+.header p{
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 2rem;
+    font-weight: 500;  
+    text-align: center; 
+}
+
+.login-social{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+
+}
+
+.google a{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    gap: 10px;
+    align-items: center;
+    background-color:#f8f8f8;
+    padding: 10px 30px;
+    border: 1px solid #ff4646;
+    border-radius: 5px;
+
+}
+
+.google a img{
+    width: 22px;
+}
+
+
+.google a:hover{
+    color: white;
+    background-color:#ff4646;
+}
+
+.facebook a{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    gap: 10px;
+    align-items: center;
+    background-color:#f8f8f8;
+    padding: 10px 30px;
+    border: 1px solid #03a7d3;
+    border-radius: 5px;
+
+}
+
+.facebook a img{
+    width: 22px;
+}
+
+.facebook a:hover{
+    color: white;
+    background-color:#03a7d3;
+}
+
+.continue p{
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 2rem;
+    font-weight: 500;   
+
+}
+
+
+.fullname{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    
+} 
+
+.fullname input{
+    height: 35px;
+    border-radius: 5px;
+    border:none;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ff4646;
+    outline: none;
+    padding: 10px;
+    
+}
+
+.fullname input::placeholder{
+        color: black;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input-form input{
+    
+    height: 35px;
+    border-radius: 5px;
+    border:none;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ff4646;
+    outline: none;
+    padding: 1px;
+    
+}
+
+.input-form ::placeholder{
+    color: black;
+    /* font-weight: 500; */
+    /* padding: 10px; */
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    color: #ff4646;
+    
+}
+
+.input-box a{
+    color: black;
+    font-size: 13px;
+}
+
+.input-box a:hover{
+    color:#ff4646;
+}
+
+.box{
+    display: flex;
+    gap: 7px;
+}
+.box p{
+    color: black;
+    font-size: 13px;
+}
+
+.box input{
+    color:#ff4646;
+
+}
+
+form button{
+    text-align: center;
+    background-color:#f8f8f8;
+    color:#ff4646;
+    font-size: 15px;
+    font-weight: 500;
+    width: 22.5rem;
+    /* height: 7px; */
+    padding: 7px;
+    text-align: center;
+    border:1px solid #ff4646;
+    border-radius: 3px;
+    cursor:pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    
+}
+
+.get:hover{
+    color: white;
+    background-color:#ff4646;
+    border: 1px solid #ff4646;
+}
+
+.get a{
+    color:black;
+}
+
+.bottom p{
+text-align:center;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+
+.bottom a{
+    color: #ff4646;
+}
+
+.bottom a:hover{
+    color: black;
+}
+
+@media(max-width:414px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 0px;
+    }
+   .navlinks a{
+        display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .toggle{
+        display: flex;
+    }
+
+    .logo h1, .logo span{
+        /* font-size: 30px; */
+        display: flex;
+    }
+
+    .form{
+    margin: 0px;
+    border-radius: 10px;
+    /* padding: 0px;         */
+    padding: 30px 10px;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    }
+
+    form button{
+        width:10.5rem ;
+        margin-left: 5rem;
+}
+
+    .get:hover{
+    background-color:#ff4646;
+}
+.fullname{
+    flex-direction: column;
+
+}
+
+.fullname input::placeholder{
+    font-size: 16px;
+
+}
+
+.login-social{
+   margin: 0px;
+   margin-left: 15px;
+   margin-bottom: 3rem;
+
+
+}
+}
+

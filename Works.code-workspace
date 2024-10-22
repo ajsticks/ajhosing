@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "../Works"
+        },
+        {
+            "path": "."
+        },
+        {
+            "path": "../Inance"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Hosting"
+    }
+}
